@@ -1,0 +1,5 @@
+<%= @group.name %>
+
+<% @group.products.each do |product| %>
+  <li><%= link_to product.name, product %></li>
+<% end %>
