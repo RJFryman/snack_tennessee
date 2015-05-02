@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150502170349) do
+ActiveRecord::Schema.define(version: 20150502175720) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,7 +39,8 @@ ActiveRecord::Schema.define(version: 20150502170349) do
   end
 
   create_table "groups", force: :cascade do |t|
-    t.string "name"
+    t.string  "name"
+    t.integer "category_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -56,6 +57,11 @@ ActiveRecord::Schema.define(version: 20150502170349) do
     t.string  "plus"
   end
 
+  create_table "locations_products", id: false, force: :cascade do |t|
+    t.integer "location_id", null: false
+    t.integer "product_id",  null: false
+  end
+
   create_table "makers", force: :cascade do |t|
     t.string  "name"
     t.string  "website"
@@ -70,8 +76,10 @@ ActiveRecord::Schema.define(version: 20150502170349) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
+    t.string  "name"
+    t.string  "description"
+    t.integer "group_id"
+    t.integer "maker_id"
   end
 
 end
