@@ -1,5 +1,13 @@
 source 'https://rubygems.org'
 
+gem 'bourbon'
+gem 'neat'
+gem 'devise'
+gem 'cancan'
+gem 'paper_trail', '~> 4.0.0.beta'
+gem 'carrierwave'
+gem 'rmagick'
+gem 'rails_admin'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
