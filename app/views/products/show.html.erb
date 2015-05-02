@@ -1,2 +1,4 @@
 <%= @product.name %>
 <%= @product.description %>
+
+<%= image_tag @product.image_url() if @product.image? %>

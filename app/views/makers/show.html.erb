@@ -8,3 +8,5 @@
 <%= @maker.facebook %>
 <%= @maker.twitter %>
 <%= @maker.plus %>
+
+<%= image_tag @maker.image_url() if @maker.image? %>
