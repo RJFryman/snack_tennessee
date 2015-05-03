@@ -18,7 +18,7 @@
   <div class="makers-products">
     <h2>Products</h2>
     <% @maker.products.each do |product| %>
-      <li><%= product.name %></li>
+      <li><%= link_to product.name, product %></li>
       <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
     <% end %>
   </div>
