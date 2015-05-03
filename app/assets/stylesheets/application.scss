@@ -1,3 +1,85 @@
-@import "bourbon";
-@import "base/base";
-@import "neat";
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+$hero-background: image-path("yazoo-beers.jpeg");
+
+
+//Color Palette
+$navy:       #264D7E;
+$cobalt:     #7294BE;
+$light-blue: #9EC3E8;
+$blue:       #356DB1;
+
+//typography
+@import url(http://fonts.googleapis.com/css?family=Raleway|Amaranth);
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+	color: #fff;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	color: #fff;
+	background-color: $cobalt;
+}
+
+
+//Homepage
+.hero {
+	height: 100%;
+	padding: 4em 0;
+
+	h1{
+		text-align: right;
+		@media screen only and (max-width: 480px) {
+			text-align: center;
+		}
+	}
+}
+
+.grid-item {
+	width: 200px;
+	height: 150px;
+	border-radius: 8px;
+	background-color: $navy;
+	margin-right: 10px;
+	margin-bottom: 10px;
+
+	//Styling for the icons in the middle of each section
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400%;
+}
+
+.protein {
+	background-image: image-url("/icons/protein_icon.svg");		
+}
+.beverages {
+	background-image: image-url("/icons/beverage_icon.svg");		
+}
+.produce {
+	background-image: image-url("/icons/veggies_icon.svg");		
+}
+.goodies {
+	background-image: image-url("/icons/goodies_icon.svg");		
+}
+
+
+//Footer
+footer{
+	height: 100px;
+	text-align: center;
+
+	//Setting that cool logo in the center
+	background-color: $navy;
+	background-image: image-url("snack_tn_mark.svg");
+	background-repeat: no-repeat;
+	background-size: 75px;
+	background-position: center;
+}
