@@ -31,6 +31,33 @@ body {
 }
 
 
+//Navbar
+.navbar-default {
+	background: $navy;
+	border: none;
+	border-radius: 0;
+	height: 75px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+	line-height: 50px;
+	color: #fff !important;
+	//Styling for the icons in the middle of each section
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400%;
+	&:hover {
+		color: $cobalt !important;
+	}
+}
+
+.nav-logo {
+	margin-top: -10px;
+	max-width: 60px;
+}
+
 //Homepage
 .hero {
 	min-height: 100vh;
@@ -129,7 +156,8 @@ footer{
 	background-color: $navy;
 
 	.footer-logo {
-		width: 50px;
+		width: 44px;
+		margin-top: 14px;
 	}
 
 	.nav {
@@ -137,7 +165,6 @@ footer{
 	}
 
 	.navbar {
-		padding-top: 14px;
 		margin-bottom: 0;
 		padding-bottom: 0;
 		border: none;
