@@ -1,3 +1,4 @@
 http://www.snacktn.com/
-# h1 This is our awesome Hack Tennessee app we created in 48 hours.
-# h2 Snack Tennessee is Awesome! 
+
+This is our awesome Hack Tennessee app we created in 48 hours.
+Snack Tennessee is Awesome! 
