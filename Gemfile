@@ -4,6 +4,7 @@ gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise'
 gem 'cancan'
 gem 'rails_admin'
+gem 'rails_12factor'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
