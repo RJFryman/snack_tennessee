@@ -1,0 +1,94 @@
+//general styles
+
+body.prod_show_body {
+  background-color: #98C6FE;
+}
+
+.prod_show_wrapper {
+  width: 100%;
+}
+
+//Left sidebar styles
+
+.mkr_spot_leftcol {
+  padding: 2% 4%;
+  background: #264D7E;
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  box-shadow: 3px 3px 7px #000;
+}
+
+
+.mkr_spot_image img {
+  max-width: 200px;
+  margin: 10px 10px 0px;
+  border-radius: 5px;
+}
+
+.mkr_spot_image {
+  width: 190px;
+  height: 190px;
+  background-color: #4C9BFE;
+  border-radius: 5px;
+}
+
+//Styles for the product boxes and product list title.
+
+.mkr-spot-product-title {
+  background: #7294BE;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 2px 3px 10px #000;
+  h1 {
+    font-family: amaranth;
+  }
+}
+
+.mkr-spot-products-list {
+  width: 45%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 50px;
+  box-shadow: none;
+  p {
+    margin: 0px 20px;
+    font-family: raleway;
+  }
+}
+
+
+//Media Queriesssssss
+
+
+@media screen and (max-width: 1000px){
+  .mkr_spot_leftcol {
+    width: 100%;
+    display: block;
+  }
+  .mkr_spot_image {
+    margin: auto;
+  }
+  .mkr_spot_leftcol div:nth-child(n+2) {
+    display: inline-block;
+  }
+  .mkr-spot-products-list {
+    padding: 20px;
+    width: 95%;
+  }
+  .mkr-spot-products-list > div {
+    width: 95%;
+  }
+    .mkr-spot-products-list > div.mkr-spot-product-title {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mkr-spot-products-list > div > h2 {
+    font-size: 1.5em;
+  }
+}
+

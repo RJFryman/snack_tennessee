@@ -1,2 +1,23 @@
-<%= @product.name %>
-<%= @product.description %>
+<!DOCTYPE html>
+<html>
+  <%= stylesheet_link_tag "application"  %>
+  <%= stylesheet_link_tag "prod_show"  %>
+  <link href='http://fonts.googleapis.com/css?family=Amaranth|Raleway:400,600' rel='stylesheet' type='text/css'>
+  <body class="prod_show_body">
+    <div class= "prod_show_wrapper">
+      <div class="mkr_spot_leftcol">
+        <div class="mkr_spot_image">
+          <%= image_tag @product.imageurl %>
+        </div>
+      </div>
+
+
+      <div class="mkr-spot-products-list">
+        <div class="mkr-spot-product-title">
+          <h1><%= @product.name %></h1>
+        </div>
+        <p><%= @product.description %></p>
+      </div>
+    </div>
+  </body>
+</html>

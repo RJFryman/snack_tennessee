@@ -3,8 +3,6 @@ source 'https://rubygems.org'
 gem 'bootstrap-sass', '~> 3.3.4'
 gem 'devise'
 gem 'cancan'
-gem 'carrierwave'
-gem 'rmagick'
 gem 'rails_admin'
 gem 'rails_12factor'
 
