@@ -23,11 +23,14 @@
 		text-align: left;
 		display: inline-block;
 		vertical-align: top;
+		font-size:0.9em;
 	}
+
 	.AboutUs-bios-wrap img {
-		width:100%;
-		height:auto;
+		width:168px;
+		height:168px;
 		margin-bottom: 1em;
+		object-fit: cover;
 	}
 	.section-inner .group-photo {
 		margin: 2em auto;
@@ -40,12 +43,16 @@
 </style>
 <main class="section AboutUs">
 	<div class="section-inner">
-		<img src="http://placekitten.com/g/500/300" width="500" height="300" alt="" class="group-photo" />
+		<img src="/assets/snacktnteam_small.jpg" width="900" height="675" alt="" class="group-photo center-block" />
+		<div class="team-blurb">
+			<p>Bacon ipsum dolor amet t-bone tri-tip short loin meatball ball tip swine chuck alcatra shoulder sausage kielbasa fatback drumstick.  Turkey sausage brisket turducken.  Venison kevin bresaola ham hock turkey sirloin capicola chicken drumstick pork loin ribeye shank t-bone.  Turkey shank cow venison.  Kevin chuck rump chicken.</p>
+			<p>Bacon shoulder doner, tail pig strip steak tongue leberkas meatball cupim turkey sirloin.  Short loin drumstick fatback corned beef.  Ham hock shoulder t-bone pork belly pancetta.  Cupim pork shankle hamburger chuck leberkas.  Spare ribs t-bone jowl, pork belly tri-tip sirloin rump prosciutto pork ham shankle capicola.  Kevin bacon turkey ball tip cow pork loin drumstick picanha shoulder spare ribs sausage swine rump sirloin beef ribs.</p>
+		</div>
 		  <section class="AboutUs-bios">
 			<% @members.each do |member| %>
 				<div class="AboutUs-bios-wrap">
 				    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
-				    <p><strong><%= member.name %></strong></p>
+				    <p class="name"><%= member.name %></p>
 				    <p><%= member.bio %></p>
 				    <ul>
 					    <li>Twitter: <%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
