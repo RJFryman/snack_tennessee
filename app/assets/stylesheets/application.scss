@@ -191,12 +191,13 @@ footer{
   float: left;
   margin-left: 35%;
   padding-top: 40px;
+  border-radius: 50%;
 }
 
-.maker_show img {
-  max-height: 400px;
-  max-width: 200px;
-  border-radius: 50%;
+.maker-product-img {
+  max-height: 200px;
+  max-width: 150px;
+}
 
 .clear {
 	clear: both;
