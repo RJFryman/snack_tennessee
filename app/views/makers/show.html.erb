@@ -18,10 +18,8 @@
   <div class="makers-products">
     <h2>Products</h2>
     <% @maker.products.each do |product| %>
-      <ul>
-        <li><%= product.name %></li>
-        <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
-      </ul>
+      <li><%= product.name %></li>
+      <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
     <% end %>
   </div>
 </div>
