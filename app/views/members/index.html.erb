@@ -23,12 +23,14 @@
 		text-align: left;
 		display: inline-block;
 		vertical-align: top;
+		font-size:0.9em;
 	}
+
 	.AboutUs-bios-wrap img {
 		width:200px;
 		height:200px;
 		margin-bottom: 1em;
-		object-fit:cover;
+		object-fit: cover;
 	}
 	.section-inner .group-photo {
 		margin: 2em auto;
@@ -50,7 +52,7 @@
 			<% @members.each do |member| %>
 				<div class="AboutUs-bios-wrap">
 				    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
-				    <p><strong><%= member.name %></strong></p>
+				    <p class="name"><%= member.name %></p>
 				    <p><%= member.bio %></p>
 				    <ul>
 					    <li>Twitter: <%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
