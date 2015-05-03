@@ -45,6 +45,14 @@ body {
 
 .categories {
 	margin-right: 8%;
+	.row {
+		margin-bottom: 5px;
+	}
+}
+
+.btn-primary {
+	background-color: $navy;
+	border: none; 
 }
 
 .grid-item {
@@ -52,6 +60,11 @@ body {
 	height: 150px;
 	border-radius: 8px;
 	background-color: $navy;
+
+	&::hover {
+		background-color: green;
+	}
+
 	margin-right: 10px;
 	margin-bottom: 10px;
 
