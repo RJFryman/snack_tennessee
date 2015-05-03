@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  mount RailsAdmin::Engine => '/data', as: 'rails_admin'
-  devise_for :admins
+  # mount RailsAdmin::Engine => '/data', as: 'rails_admin'
+  # devise_for :admins
   resources :categories, only: [:index, :show]
   resources :groups, only: [:index, :show]
   resources :products, only: [:index, :show]
