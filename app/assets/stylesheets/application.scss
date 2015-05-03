@@ -172,11 +172,27 @@ footer{
 }
 
 /* Maker Show */
-.maker_show {
-  text-align: center;
+.maker-show-header {
+	background-color: $navy;
+	font-family: 'Amaranth', sans-serif;
+	height: 80px;
+	width: 100%;
+	padding-top: 5px;
+	text-align: center;
 }
 
-.maker_show img {
-  max-height: 400px;
-  max-width: 200px;
+.maker_show {
+  margin-left: 10px;
+}
+
+.maker-img img{
+  max-height: 200px;
+  max-width: 150px;
+  float: left;
+  margin-left: 35%;
+  padding-top: 40px;
+}
+
+.clear {
+	clear: both;
 }
