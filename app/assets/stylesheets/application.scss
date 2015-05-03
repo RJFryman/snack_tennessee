@@ -201,6 +201,10 @@ footer{
 
 .maker_show {
   margin-left: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .maker-img img{
@@ -209,6 +213,15 @@ footer{
   float: left;
   margin-left: 35%;
   padding-top: 40px;
+}
+
+.makers-products li {
+  list-style: none;
+}
+
+.maker-product-img {
+  max-height: 200px;
+  max-width: 150px;
 }
 
 .clear {
