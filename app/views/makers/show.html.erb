@@ -1,13 +1,15 @@
 <div class="maker_show">
-  <p><%= @maker.name %></p>
-  <p><%= @maker.website %></p>
-  <p><%= @maker.address %></p>
-  <p><%= @maker.state %></p>
-  <p><%= @maker.zip %></p>
-  <p><%= @maker.city %></p>
-  <p><%= @maker.description %></p>
-  <p><%= @maker.facebook %></p>
-  <p><%= @maker.twitter %></p>
-  <p><%= @maker.plus %></p>
-  <%= image_tag @maker.imageurl %>
+  <div class="maker_limiter">
+    <p><%= @maker.name %></p>
+    <p><%= @maker.website %></p>
+    <p><%= @maker.address %></p>
+    <p><%= @maker.state %></p>
+    <p><%= @maker.zip %></p>
+    <p><%= @maker.city %></p>
+    <p><%= @maker.description %></p>
+    <p><%= @maker.facebook %></p>
+    <p><%= @maker.twitter %></p>
+    <p><%= @maker.plus %></p>
+    <%= image_tag @maker.imageurl %>
+  </div>
 </div>

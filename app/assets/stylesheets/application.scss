@@ -174,9 +174,13 @@ footer{
 /* Maker Show */
 .maker_show {
   text-align: center;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .maker_show img {
   max-height: 400px;
   max-width: 200px;
+  border-radius: 50%;
 }
