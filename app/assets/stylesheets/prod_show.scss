@@ -21,14 +21,16 @@ body.prod_show_body {
 
 
 .mkr_spot_image img {
-  max-width: 200px;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
   margin: 10px 10px 0px;
   border-radius: 5px;
 }
 
 .mkr_spot_image {
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: 200px;
   background-color: #4C9BFE;
   border-radius: 5px;
 }
@@ -51,7 +53,7 @@ body.prod_show_body {
   width: 45%;
   display: inline-block;
   vertical-align: top;
-  padding: 50px;
+  padding: 10px;
   box-shadow: none;
   p {
     margin: 0px 20px;
