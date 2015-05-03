@@ -1,3 +1,20 @@
-<% @groups.each do |group| %>
-  <li><%= link_to group.name, group %></li>
-<% end %>
+<%= stylesheet_link_tag "groups" %>
+<link href='http://fonts.googleapis.com/css?family=Amaranth:400,700|Raleway:400,700' rel='stylesheet' type='text/css'>
+<div class="container">
+  <div class="header-wrapper">
+    <%= image_tag("/images/snack_tn_mark.svg") %>
+    <h1>Groups</h1>
+  </div>
+  <div class="elements-wrapper">
+    <% @groups.each do |group| %>
+      <%= link_to(group) do %>
+      <div class="group-element">
+        <%= image_tag(group.imageurl) %>
+        <p><%= group.name %></p>
+      </div>
+      <% end %>
+    <% end %>
+    <div id="clearer-div"></div>
+  </div>
+</div>
+
