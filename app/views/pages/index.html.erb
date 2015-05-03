@@ -1,22 +1,33 @@
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Snack Tennessee</title>
-</head>
-<body>
-	<div class="hero">
-	<div class="hero-inner">
-    <a href="" class="hero-logo"><img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image"></a>
-		<div class="hero-copy">
-			<h1>Snack Tennessee</h1>
-			<p>A few reasons why this product is worth using, who it's for and why they need it.</p>
-			<%= link_to "Categories", categories_path %>
-			<%= link_to "Groups", groups_path %>
-			<%= link_to "Makers", makers_path %>
-			<%= link_to "Products", products_path %>
+<section class="hero">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h1>Discover the Flavors of Tennessee</h1>
+				<div class="container">
+					<div class="row">
+						<a href="/protein">
+							<div class="grid-item protein col-sm-3">
+								<h3>Protein</h3>
+							</div>
+						</a>
+						<a href="/beverages">
+							<div class="grid-item beverages col-sm-3">
+								<h3>Beverages</h3>
+							</div>
+						</a>
+						<a href="/produce">
+							<div class="grid-item produce col-sm-3">
+								<h3>Produce</h3>
+							</div>
+						</a>
+						<a href="/goodies">
+							<div class="grid-item goodies col-sm-3">
+								<h3>Goodies</h3>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
-    <button>Learn More</button>
 	</div>
-</div>
-</body>
-</html>
+</section>
