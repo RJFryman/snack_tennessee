@@ -30,7 +30,7 @@ body {
 }
 
 a {
-	color: #fff !important;
+	color: #fff;
 	&:hover{
 		text-decoration: underline !important;
 	}
@@ -106,7 +106,7 @@ a {
 }
 
 .product-grid-item {
-	p, h1, h2, h3, h4, h5, h6 {
+	p, h1, h2, h3, h4, h5, h6, a {
 	font-family: 'Amaranth', sans-serif;
 	font-weight: normal;
 	color: $navy;
@@ -213,36 +213,27 @@ footer{
 
 .maker_show {
   margin-left: 10px;
+  text-align: center;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.maker_show img{
+.maker-img img{
   max-height: 200px;
   max-width: 150px;
+  float: left;
+  margin-left: 35%;
   padding-top: 40px;
-  object-fit: cover;
 }
 
-.makers-products-sidebar {
-  margin-top: 40px;
-  max-height: 500px;
-  max-width: 200px;
-  margin-right: 20px;
-  overflow: scroll;
-  background-color: $navy;
-}
-
-.makers-products-sidebar li {
+.makers-products li {
   list-style: none;
 }
 
 .maker-product-img {
   max-height: 200px;
   max-width: 150px;
-  object-fit: cover;
-
 }
 
 .clear {
@@ -261,8 +252,6 @@ footer{
 
 .group-products li {
 	list-style: none;
-	overflow: hidden;
-	text-overflow: ellipsis;
 	margin: 30px;
 	display: inline-block;
 	background-color: $navy;
@@ -270,10 +259,12 @@ footer{
 	border-radius: 1em;
 	height: 150px;
 	width: 15%;
+	font-size: 30px;
 	text-align: center;
 	float: left;
 
 	a {
 		color: white;
 	}
+
 }
