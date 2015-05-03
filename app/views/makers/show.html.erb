@@ -2,25 +2,28 @@
   <h1>Maker Spotlight</h1>
 </div>
 
-<div class="maker-img">
-  <%= image_tag @maker.imageurl %>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="makers-products-sidebar col-md-3">
+      <h2>Products</h2>
+      <% @maker.products.each do |product| %>
+        <li><%= link_to product.name, product %></li>
+        <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
+      <% end %>
+    </div>
 
-<div class="maker_show col-md-5 col-md-offset-4">
-  <h1><%= @maker.name %></h2>
-  <p><%= link_to("#{@maker.website}", "#{@maker.website}")%></p>
-  <p><%= @maker.address %></p>
-  <p><%= @maker.city %>, <%= @maker.state %> <%= @maker.zip %></p>
-  <p><%= @maker.description %></p>
-  <p><%= link_to("#{@maker.facebook}", "#{@maker.facebook}")%></p>
-  <p><%= link_to("#{@maker.twitter}", "#{@maker.twitter}")%></p>
-  <p><%= @maker.plus %></p>
-  <div class="makers-products">
-    <h2>Products</h2>
-    <% @maker.products.each do |product| %>
-      <li><%= product.name %></li>
-      <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
-    <% end %>
+    <div class="maker_show col-md-3">
+      <%= image_tag @maker.imageurl %>
+      <h1><%= @maker.name %></h2>
+      <p><%= link_to("#{@maker.website}", "#{@maker.website}")%></p>
+      <p><%= @maker.address %></p>
+      <p><%= @maker.city %>, <%= @maker.state %> <%= @maker.zip %></p>
+      <p><%= @maker.description %></p>
+      <p><%= link_to("#{@maker.facebook}", "#{@maker.facebook}")%></p>
+      <p><%= link_to("#{@maker.twitter}", "#{@maker.twitter}")%></p>
+      <p><%= @maker.plus %></p>
+    </div>
   </div>
 </div>
+
 <div class="clear"></div>
