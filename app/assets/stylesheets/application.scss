@@ -13,7 +13,8 @@ $light-blue: #9EC3E8;
 $blue:       #356DB1;
 
 //typography
-@import url(http://fonts.googleapis.com/css?family=Raleway|Amaranth);
+@import url(~/app/assets/fonts/Amaranth-Regular.otf);
+@import url(~/app/assets/fonts/Raleway%20regular.ttf);
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Amaranth', sans-serif;
@@ -32,15 +33,18 @@ body {
 
 //Homepage
 .hero {
-	height: 100%;
+	height: 100vh;
 	padding: 4em 0;
 
-	h1{
-		text-align: right;
-		@media screen only and (max-width: 480px) {
-			text-align: center;
-		}
-	}
+	background-image: image-url("img_0243.jpg");
+	background-size: cover;
+	background-position: center;
+	background-color: $cobalt;
+	background-blend-mode: multiply;
+}
+
+.categories {
+	margin-right: 8%;
 }
 
 .grid-item {
@@ -73,7 +77,10 @@ body {
 
 //Footer
 footer{
-	height: 100px;
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 	text-align: center;
 
 	//Setting that cool logo in the center
