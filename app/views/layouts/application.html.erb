@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-
+<% unless @nonav == true %>
+  <%= render 'shared/nav' %>
+<% end %>
 <!-- <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p> -->
 <%= yield %>
