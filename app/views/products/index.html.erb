@@ -2,10 +2,9 @@
     <% @products.each do |product| %>
         
             <div class="product-grid-item">
-                <h3><%= product.name %></h3>
+                <h3><%= link_to product.name, product %></h3>
                 <img class="center-block" src=<%= image_url(product.imageurl) if product.imageurl%>></img>
-                <br>
-                <h4><%= product.maker.name if product.maker %></h4>
+                <h4><%= link_to product.maker.name, product.maker if product.maker %></h4>
                 <p><%= product.description if product.description%></p>
             </div>
     <% end %>
