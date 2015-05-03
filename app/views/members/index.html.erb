@@ -41,14 +41,16 @@
 <main class="section AboutUs">
 <div class="section-inner">
   <h1>We are Snack Tennessee.</h1>
-  <img src="http://placekitten.com/g/500/300" width="500" height="300" alt="" class="group-photo"/>
-  <h3>'Snack Tennessee' is an app in celebration of all makers in Tennesse, from those who make and grow our food to those who make the beverage that fuel our code and allow us to have a little relaxation. It's a true celbration of all homegrown products.</h3>
-  <p>The name is also a salute to the newly rebranded event, Hack Tennessee. We celebrate the event that brings everyone from the Volunteer State to create a distinctly Tennessee product.</p>
+		<img_tag="app/assets/images/snacktnteam.JPG" width="500" height="300" alt="" class="group-photo center-block" />
+		<div class="team-blurb">
+			<p>'Snack Tennessee' is an app in celebration of all makers in Tennesse, from those who make and grow our food to those who make the beverage that fuel our code and allow us to have a little relaxation. It's a true celbration of all homegrown products.</p>
+			<p>The name is also a salute to the newly rebranded event, Hack Tennessee. We celebrate the event that bring everyone from the Volunteer State to create a distinctly Tennessee product.</p>
+		</div>
 		  <section class="AboutUs-bios">
 			<% @members.each do |member| %>
 				<div class="AboutUs-bios-wrap">
 				    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
-				    <p><strong><%= member.name %></strong></p>
+				    <p class="name"><%= member.name %></p>
 				    <p><%= member.bio %></p>
 				    <ul>
 					    <li>Twitter: <%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
