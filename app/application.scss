@@ -53,7 +53,7 @@ body {
 }
 
 .nav-logo {
-	width: 290px;
+	width: 200px;
 }
 
 //Homepage
@@ -117,8 +117,7 @@ body {
 	padding-top: 2%;
 	//padding: 4em 0;
 	img{ 
-		max-height: 350px;
-		max-width: 380px;
+		max-height: 300px;
 	}
 	
 
@@ -147,8 +146,10 @@ footer{
 	font-family: 'Amaranth', sans-serif;
 	height: 100px;
 	width: 100%;
+	position: relative;
 	margin-bottom: 0;
 	padding-bottom: 0;
+	bottom: 0;
 
 	text-align: center;
 
@@ -190,12 +191,6 @@ footer{
   float: left;
   margin-left: 35%;
   padding-top: 40px;
-  border-radius: 50%;
-}
-
-.maker-product-img {
-  max-height: 200px;
-  max-width: 150px;
 }
 
 .clear {
