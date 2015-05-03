@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   resources :groups, only: [:index, :show]
   resources :products, only: [:index, :show]
   resources :makers, only: [:index, :show]
-  resources :members, only: [:index, :show]
+  resources :members, only: [:index]
   get '/aboutus', to: 'members#index'
   root 'pages#index'
 end

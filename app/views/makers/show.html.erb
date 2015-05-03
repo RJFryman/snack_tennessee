@@ -1,13 +1,20 @@
-<div class="maker_show">
-  <p><%= @maker.name %></p>
-  <p><%= @maker.website %></p>
-  <p><%= @maker.address %></p>
-  <p><%= @maker.state %></p>
-  <p><%= @maker.zip %></p>
-  <p><%= @maker.city %></p>
-  <p><%= @maker.description %></p>
-  <p><%= @maker.facebook %></p>
-  <p><%= @maker.twitter %></p>
-  <p><%= @maker.plus %></p>
+<div class="maker-show-header">
+  <h1>Maker Spotlight</h1>
+</div>
+
+<div class="maker-img">
   <%= image_tag @maker.imageurl %>
 </div>
+
+<div class="maker_show col-md-5 col-md-offset-4">
+  <h1><%= @maker.name %></h2>
+  <p><%= @maker.website %></p>
+  <p><%= @maker.address %></p>
+  <p><%= @maker.city %>, <%= @maker.state %> <%= @maker.zip %></p>
+  <p><%= @maker.description %></p>
+  <p><a href="<%= @maker.facebook %>">Facebook</a></p>
+  <p><%= @maker.twitter %></p>
+  <p><%= @maker.plus %></p>
+</div>
+
+<div class="clear"></div>

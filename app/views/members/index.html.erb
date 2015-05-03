@@ -1,9 +1,58 @@
-<% @members.each do |member| %>
-  <div>
-    <%= member.name %>
-    <%= member.bio %>
-    <li><%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
-    <li><%= link_to member.github, "https://github.com/#{member.github}" %></li>
-    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
-  </div>
-<% end %>
+<style type="text/css">
+	* {
+		box-sizing: border-box; -moz-box-sizing: border-box;
+	}
+	.section {
+		width:100%;
+	}
+	.section-inner{
+		width:60em;
+		margin:0 auto;
+		text-align: center;
+	}
+	.section-inner img {
+		text-align: center;
+		margin:0 auto;
+	}
+	.AboutUs-bios {
+		width:100%;
+	}
+	.AboutUs-bios-wrap {
+		width:200px;
+		padding: 1em;
+		text-align: left;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.AboutUs-bios-wrap img {
+		width:100%;
+		height:auto;
+		margin-bottom: 1em;
+	}
+	.section-inner .group-photo {
+		margin: 2em auto;
+	}
+	.AboutUs-bios-wrap ul {
+		list-style: none;
+		text-align: left;
+		padding-left: 0;
+	}
+</style>
+<main class="section AboutUs">
+	<div class="section-inner">
+		<img src="http://placekitten.com/g/500/300" width="500" height="300" alt="" class="group-photo" />
+		  <section class="AboutUs-bios">
+			<% @members.each do |member| %>
+				<div class="AboutUs-bios-wrap">
+				    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
+				    <p><strong><%= member.name %></strong></p>
+				    <p><%= member.bio %></p>
+				    <ul>
+					    <li>Twitter: <%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
+					    <li>Github: <%= link_to member.github, "https://github.com/#{member.github}" %></li>
+				    </ul>
+				</div>
+			<% end %>
+		</section>
+	</div>
+</main>
