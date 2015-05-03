@@ -1,3 +1,16 @@
-<% @makers.each do |maker| %>
-  <li><%= link_to maker.name, maker %></li>
-<% end %>
+<div class="maker-show-header">
+  <h1> Makers</h1>
+</div>
+
+<div class="makers-index col-md-12">
+  <% @makers.each do |maker| %>
+    <%= link_to(maker) do %>
+    <li>
+      <%= image_tag maker.imageurl %>
+      <h4><%= maker.name %></h4>
+      <%= maker.city %>, <%= maker.state %>
+    </li>
+    <% end %>
+ <% end %>
+</div>
+<div class="clear"></div>
