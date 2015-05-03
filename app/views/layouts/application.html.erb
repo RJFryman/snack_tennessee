@@ -8,10 +8,27 @@
 </head>
 <body>
 
-
+<section class="hero">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-6">
+				<%= image_tag "snacktn_logo.svg", :class => "center-block" %>
+			</div>
+			<div class="col-lg-6">
+				<%= yield %>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6"></div>
+			<div class="col-lg-6">
+				<a href="/makers" class="btn btn-primary btn-lg"><h2>Meet the Makers</h2></a>
+			</div>
+		</div>
+	</div>
+</section>
 <!-- <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p> -->
-<%= yield %>
+
 
 <%= render 'shared/footer'%>
 
