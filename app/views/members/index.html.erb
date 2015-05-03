@@ -1,3 +1,9 @@
 <% @members.each do |member| %>
-  <li><%= link_to member.name, member %></li>
+  <div>
+    <%= member.name %>
+    <%= member.bio %>
+    <li><%= link_to member.twitter, "https://twitter.com/#{member.twitter}" %></li>
+    <li><%= link_to member.github, "https://github.com/#{member.github}" %></li>
+    <img class="center-block" src=<%= image_url(member.imageurl) %>></img>
+  </div>
 <% end %>
