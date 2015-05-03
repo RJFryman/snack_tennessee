@@ -8,13 +8,19 @@
 
 <div class="maker_show col-md-5 col-md-offset-4">
   <h1><%= @maker.name %></h2>
-  <p><%= @maker.website %></p>
+  <p><%= link_to("#{@maker.website}", "#{@maker.website}")%></p>
   <p><%= @maker.address %></p>
   <p><%= @maker.city %>, <%= @maker.state %> <%= @maker.zip %></p>
   <p><%= @maker.description %></p>
-  <p><a href="<%= @maker.facebook %>">Facebook</a></p>
-  <p><%= @maker.twitter %></p>
+  <p><%= link_to("#{@maker.facebook}", "#{@maker.facebook}")%></p>
+  <p><%= link_to("#{@maker.twitter}", "#{@maker.twitter}")%></p>
   <p><%= @maker.plus %></p>
+  <div class="makers-products">
+    <h2>Products</h2>
+    <% @maker.products.each do |product| %>
+      <li><%= product.name %></li>
+      <li><%= image_tag product.imageurl, :class => "maker-product-img" %></li>
+    <% end %>
+  </div>
 </div>
-
 <div class="clear"></div>
