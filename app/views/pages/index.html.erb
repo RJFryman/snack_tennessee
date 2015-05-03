@@ -1,31 +1,39 @@
 
 <section class="hero">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
-			<div class="col-sm-12">
+			<div class="col-lg-6">
+				<%= image_tag "logo.svg", :class => "center-block" %>
+			</div>
+			<div class="col-lg-6">
 				<h1>Discover the Flavors of Tennessee</h1>
-				<div class="container">
+				<div class="categories container-fluid">
 					<div class="row">
 						<a href="/protein">
-							<div class="grid-item protein col-sm-3">
+							<div class="grid-item protein col-sm-6">
 								<h3>Protein</h3>
 							</div>
 						</a>
 						<a href="/beverages">
-							<div class="grid-item beverages col-sm-3">
+							<div class="grid-item beverages col-sm-6">
 								<h3>Beverages</h3>
 							</div>
 						</a>
+					</div>
+					<div class="row">
 						<a href="/produce">
-							<div class="grid-item produce col-sm-3">
+							<div class="grid-item produce col-sm-6">
 								<h3>Produce</h3>
 							</div>
 						</a>
 						<a href="/goodies">
-							<div class="grid-item goodies col-sm-3">
-								<h3>Goodies</h3>
+							<div class="grid-item goodies col-sm-6">
+								<h3>Other</h3>
 							</div>
 						</a>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
