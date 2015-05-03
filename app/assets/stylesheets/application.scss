@@ -118,9 +118,10 @@ body {
 //Footer
 footer{
 	font-family: 'Amaranth', sans-serif;
-	height: 80px;
+	height: 100px;
 	width: 100%;
 	position: relative;
+	margin-bottom: 0;
 	padding-bottom: 0;
 	bottom: 0;
 
@@ -129,8 +130,8 @@ footer{
 	background-color: $navy;
 
 	.footer-logo {
-		width: 44px;
-		margin-top: 14px;
+		width: 42px;
+		margin-top: -2px;
 	}
 
 	.nav {
