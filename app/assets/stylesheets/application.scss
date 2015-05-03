@@ -29,6 +29,12 @@ body {
 	background-color: $cobalt;
 }
 
+a {
+	color: #fff !important;
+	&:hover{
+		text-decoration: underline !important;
+	}
+}
 
 //Navbar
 .navbar-default {
@@ -105,6 +111,10 @@ body {
 	font-weight: normal;
 	color: $navy;
 }
+	p {
+		padding-left: 20px; 
+		padding-right: 20px; 
+	}
 	text-align: center;
 	width: 400px;
 	height: 600px;
@@ -226,4 +236,33 @@ footer{
 
 .clear {
 	clear: both;
+}
+
+/* group show */
+.group-name {
+	background-color: $navy;
+	font-family: 'Amaranth', sans-serif;
+	height: 80px;
+	width: 100%;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.group-products li {
+	list-style: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 30px;
+	display: inline-block;
+	background-color: $navy;
+	padding: 50px;
+	border-radius: 1em;
+	height: 150px;
+	width: 15%;
+	text-align: center;
+	float: left;
+
+	a {
+		color: white;
+	}
 }

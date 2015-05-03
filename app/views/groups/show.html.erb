@@ -1,5 +1,12 @@
-<%= @group.name %>
+  <div class="group-name">
+    <h1><%= @group.name %></h1>
+  </div>
 
-<% @group.products.each do |product| %>
-  <li><%= link_to product.name, product %></li>
-<% end %>
+  <div class="group-products col-md-12">
+    <% @group.products.each do |product| %>
+      <h3><li><%= link_to product.name, product %></li></h3>
+    <% end %>
+  </div>
+
+  <div class="clear">
+  </div>
