@@ -1,4 +1,4 @@
-[Snack Tennessee]:http://www.snacktn.com/
+http://www.snacktn.com/
 
 This is our awesome Hack Tennessee app we created in 48 hours.
 Snack Tennessee is Awesome!
