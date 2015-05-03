@@ -3,10 +3,10 @@
         
             <div class="product-grid-item">
                 <h3><%= product.name %></h3>
-                <img class="center-block" src=<%= image_url(product.imageurl) %>></img>
+                <img class="center-block" src=<%= image_url(product.imageurl) if product.imageurl%>></img>
                 <br><br><br>
-                <h4><%= product.maker.name %></h4>
-                <p><%= product.description %></p>
+                <h4><%= product.maker.name if product.maker %></h4>
+                <p><%= product.description if product.description%></p>
             </div>
     <% end %>
 </div>
