@@ -171,6 +171,25 @@ footer{
 	}
 }
 
+/* Maker Index */
+.makers-index li {
+	list-style: none;
+	margin: 30px;
+	display: inline-block;
+	background-color: $navy;
+	padding: 50px;
+	border-radius: 1em;
+	height: 250px;
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+
+.makers-index img {
+	max-width: 60%;
+	padding-bottom: 10px;
+}
+
 /* Maker Show */
 .maker-show-header {
 	background-color: $navy;
