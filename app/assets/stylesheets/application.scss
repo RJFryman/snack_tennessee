@@ -29,6 +29,12 @@ body {
 	background-color: $cobalt;
 }
 
+a {
+	color: #fff !important;
+	&:hover{
+		text-decoration: underline !important;
+	}
+}
 
 //Navbar
 .navbar-default {
