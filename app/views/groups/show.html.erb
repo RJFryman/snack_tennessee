@@ -4,7 +4,7 @@
 
   <div class="group-products col-md-12">
     <% @group.products.each do |product| %>
-      <li><%= link_to product.name, product %></li>
+      <h3><li><%= link_to product.name, product %></li></h3>
     <% end %>
   </div>
 
