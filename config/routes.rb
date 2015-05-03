@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   resources :makers, only: [:index, :show]
   resources :members, only: [:index, :show]
+  get '/aboutus', to: 'members#index'
   root 'pages#index'
 end
