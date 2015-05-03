@@ -13,8 +13,7 @@ $light-blue: #9EC3E8;
 $blue:       #356DB1;
 
 //typography
-@import url(~/app/assets/fonts/Amaranth-Regular.otf);
-@import url(~/app/assets/fonts/Raleway%20regular.ttf);
+@import url(http://fonts.googleapis.com/css?family=Amaranth|Raleway);
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Amaranth', sans-serif;
@@ -31,9 +30,35 @@ body {
 }
 
 
+//Navbar
+.navbar-default {
+	background: $navy;
+	border: none;
+	border-radius: 0;
+	height: 75px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.navbar-nav > li > a {
+	line-height: 50px;
+	color: #fff !important;
+	//Styling for the icons in the middle of each section
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400%;
+	&:hover {
+		color: $cobalt !important;
+	}
+}
+
+.nav-logo {
+	width: 200px;
+}
+
 //Homepage
 .hero {
-	height: 100vh;
+	min-height: 100vh;
 	padding: 4em 0;
 
 	background-image: image-url("img_0243.jpg");
@@ -45,15 +70,56 @@ body {
 
 .categories {
 	margin-right: 8%;
+	.row {
+		margin-bottom: 5px;
+	}
+}
+
+.btn-primary {
+	background-color: $navy;
+	border: none; 
 }
 
 .grid-item {
 	width: 200px;
 	height: 150px;
 	border-radius: 8px;
-	background-color: $navy;
+	// background-color: $navy;
+
+	&::hover {
+		background-color: green;
+	}
+
 	margin-right: 10px;
 	margin-bottom: 10px;
+
+	//Styling for the icons in the middle of each section
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 400%;
+}
+
+.product-grid-item {
+	p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+	color: $navy;
+}
+	text-align: center;
+	width: 400px;
+	height: 600px;
+	border-radius: 8px;
+	background-color: white;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: inline-block !important;
+	vertical-align: top !important;
+	padding-top: 2%;
+	//padding: 4em 0;
+	img{ 
+		max-height: 300px;
+	}
+	
 
 	//Styling for the icons in the middle of each section
 	background-repeat: no-repeat;
@@ -77,16 +143,56 @@ body {
 
 //Footer
 footer{
-	height: 60px;
+	font-family: 'Amaranth', sans-serif;
+	height: 100px;
 	width: 100%;
-	position: absolute;
+	position: relative;
+	margin-bottom: 0;
+	padding-bottom: 0;
 	bottom: 0;
+
 	text-align: center;
 
-	//Setting that cool logo in the center
 	background-color: $navy;
-	background-image: image-url("snack_tn_mark.svg");
-	background-repeat: no-repeat;
-	background-size: 75px;
-	background-position: center;
+
+	.footer-logo {
+		width: 42px;
+		margin-top: -2px;
+	}
+
+	.nav {
+		margin-left: 30%;
+	}
+
+	.navbar {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border: none;
+	}
+}
+
+/* Maker Show */
+.maker-show-header {
+	background-color: $navy;
+	font-family: 'Amaranth', sans-serif;
+	height: 80px;
+	width: 100%;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.maker_show {
+  margin-left: 10px;
+}
+
+.maker-img img{
+  max-height: 200px;
+  max-width: 150px;
+  float: left;
+  margin-left: 35%;
+  padding-top: 40px;
+}
+
+.clear {
+	clear: both;
 }
